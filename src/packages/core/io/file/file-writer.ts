@@ -1,5 +1,6 @@
 import { writeFileSync } from "fs";
-import { concatBy } from "../../utils";
+
+import { concatBy, toJson } from "../../utils";
 
 import { KxEolContainer } from "./eol-container";
 
@@ -46,7 +47,7 @@ export class KxFileWriter extends KxEolContainer {
 	 * @returns {boolean} Returns `true` if the operation succeeded.
 	 */
 	public writeFileJson<T>(object: T): boolean {
-		const content = JSON.stringify(object);
+		const content = toJson(object);
 		return this.writeFileCore(content);
 	}
 

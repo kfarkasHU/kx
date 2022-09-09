@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 import { EOL } from "os";
 
-import { ensureAs } from "../../utils";
+import { ensureAs, fromJson } from "../../utils";
 
 import { KxEolContainer } from "./eol-container";
 
@@ -45,8 +45,8 @@ export class KxFileReader extends KxEolContainer {
 	 */
 	public readFileJson<T>(): T {
 		const content = this.readFileStringCore();
-		const object = JSON.parse(content);
-		return ensureAs<T>(object);
+		const object = fromJson<T>(content);
+		return object;
 	}
 
 	private readFileStringCore() {
