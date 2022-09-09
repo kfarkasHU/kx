@@ -11,7 +11,7 @@ export class KxFileReader {
 	/**
 	 * Creates a new `KxFileReader` instance.
 	 * @param {string} _absoluteFilePath Absolute file path.
-	 * @param {string} [_eol=EOL]  End of line character.
+	 * @param {string} [_eol=EOL] End of line character.
 	 * @returns {KxFileReader} A new `KxFileReader` instance.
 	 */
 	constructor(
