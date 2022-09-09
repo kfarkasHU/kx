@@ -17,7 +17,7 @@ export class KxFileWriter extends KxEolContainer {
 	 */
 	constructor(
 		private readonly _absoluteFilePath: string,
-		_eol: string
+		_eol?: string
 	) {
 		super(_eol)
 	}

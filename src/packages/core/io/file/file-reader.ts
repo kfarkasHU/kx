@@ -1,5 +1,4 @@
 import { readFileSync } from "fs";
-import { EOL } from "os";
 
 import { fromJson } from "../../utils";
 
@@ -18,7 +17,7 @@ export class KxFileReader extends KxEolContainer {
 	 */
 	constructor(
 		private readonly _absoluteFilePath: string,
-		_eol: string = EOL
+		_eol?: string
 	) {
 		super(_eol);
 	}
