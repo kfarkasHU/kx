@@ -3,10 +3,12 @@ import { EOL } from "os";
 
 import { ensureAs } from "../../utils";
 
+import { KxEolContainer } from "./eol-container";
+
 /**
  * KxFileReader definition.
  */
-export class KxFileReader {
+export class KxFileReader extends KxEolContainer {
 
 	/**
 	 * Creates a new `KxFileReader` instance.
@@ -16,8 +18,10 @@ export class KxFileReader {
 	 */
 	constructor(
 		private readonly _absoluteFilePath: string,
-		private readonly _eol: string = EOL
-	) { }
+		_eol: string = EOL
+	) {
+		super(_eol);
+	}
 
 	/**
 	 * Reads all line of the given file.
