@@ -4,15 +4,15 @@ import { EOL } from "os";
 import { ensureAs } from "../../utils";
 
 /**
- * KxFileWriter definition.
+ * KxFileReader definition.
  */
-export class KxFileWriter {
+export class KxFileReader {
 
 	/**
-	 * Creates a new `KxFileWriter` instance.
+	 * Creates a new `KxFileReader` instance.
 	 * @param {string} _absoluteFilePath Absolute file path.
 	 * @param {string} [_eol=EOL]  End of line character.
-	 * @returns {KxFileWriter} A new `KxFileWriter` instance.
+	 * @returns {KxFileReader} A new `KxFileReader` instance.
 	 */
 	constructor(
 		private readonly _absoluteFilePath: string,
