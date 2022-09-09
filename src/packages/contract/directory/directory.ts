@@ -1,4 +1,5 @@
 export interface KxDirectory {
+	path: string;
 	files: string[];
-	directories: KxDirectory[]
+	directories: string[]
 }
