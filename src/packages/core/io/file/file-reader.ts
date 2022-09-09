@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 import { EOL } from "os";
 
-import { ensureAs, fromJson } from "../../utils";
+import { fromJson } from "../../utils";
 
 import { KxEolContainer } from "./eol-container";
 
