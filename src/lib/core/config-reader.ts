@@ -29,7 +29,7 @@ export class KxConfigReader extends KxFileJsonEntry<KxConfig> {
 
 	/**
 	 * Reads the configuration from the file.
-	 * @param {boolean} useCache Use cache to read/store the configuration.
+	 * @param {boolean} [useCache=true] Use cache to read/store the configuration.
 	 * @returns {KxConfig} The current configuration.
 	 */
 	public read(useCache: boolean = true): KxConfig {
