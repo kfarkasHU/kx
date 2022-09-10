@@ -1,5 +1,4 @@
-export interface KxDirectory {
-	path: string;
-	files: string[];
-	directories: string[]
+import { KxBaseDirectory } from "./base-directory";
+
+export interface KxDirectory extends KxBaseDirectory<string> {
 }
